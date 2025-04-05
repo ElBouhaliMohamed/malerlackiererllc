@@ -4,6 +4,7 @@ import Layout from '@/components/layout/layout';
 import ClientPage from './client-page';
 
 export const revalidate = 300;
+export const runtime = "edge";
 
 export default async function Page({
   params,

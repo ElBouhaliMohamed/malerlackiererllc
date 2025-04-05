@@ -23,8 +23,8 @@ const lato = Lato({
 });
 
 export const metadata: Metadata = {
-  title: "Tina",
-  description: "Tina Cloud Starter",
+  title: "Malermeister Bogdan",
+  description: "Malermeister Bogdan",
 };
 
 export default async function RootLayout({
@@ -57,12 +57,17 @@ export default async function RootLayout({
         {/* if you aren't deploying to github pages, feel free to delete these tags */}
         <meta name="X-Frame-Options" content="SAMEORIGIN" />
         <meta name="Content-Security-Policy" content="frame-ancestors 'self'" />
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
       </head>
       <body
         suppressHydrationWarning
         className={cn("min-h-screen flex flex-col antialiased", fontVariable)}
       >
         {children}
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script>
+          AOS.init();
+        </script>
       </body>
     </html>
   );

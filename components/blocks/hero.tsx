@@ -46,7 +46,10 @@ export const Hero = ({ data }: { data: PageBlocksHero }) => {
               </span>
             </h3>
           )}
-          <div className='flex flex-col md:flex-row gap-6'>
+          <div className={`
+            flex gap-6
+            ${data.image?.rightsided ? 'flex-col md:flex-row' : 'flex-col-reverse md:flex-row-reverse'}
+            `}>
             <div className='flex flex-col md:w-3/5'>
               {data.text && (
                 <div
@@ -103,7 +106,6 @@ export const heroBlockSchema: Template = {
   name: 'hero',
   label: 'Hero',
   ui: {
-    previewSrc: '/blocks/hero.png',
     defaultItem: {
       tagline: "Here's some text above the other text",
       headline: 'This Big Text is Totally Awesome',
@@ -187,6 +189,11 @@ export const heroBlockSchema: Template = {
           label: 'Alt Text',
           type: 'string',
         },
+        {
+          name: 'rightsided',
+          label: 'Rechts Zentriert',
+          type: 'boolean'
+        }
       ],
     },
     {

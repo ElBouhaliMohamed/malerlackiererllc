@@ -1,41 +1,49 @@
 {
   "header": {
     "icon": {
-      "name": "Tina",
-      "color": "orange",
-      "style": "float"
+      "name": "BiSolidPaintRoll",
+      "color": "blue",
+      "style": "circle"
     },
-    "name": "Tina Starter",
+    "name": " Bogdan Ledwon",
     "color": "default",
     "nav": [
       {
-        "href": "",
+        "href": "/",
         "label": "Home"
       },
       {
-        "href": "about",
-        "label": "About"
-      },
-      {
-        "href": "posts",
-        "label": "Blog"
+        "href": "#kontakt",
+        "label": "Kontakt"
       }
     ]
   },
   "footer": {
     "color": "default",
+    "links": [
+      {
+        "name": "Datenschutz",
+        "link": "/datenschutz",
+        "follow": true
+      },
+      {
+        "name": "Impressum",
+        "link": "/impressum",
+        "follow": true
+      }
+    ],
     "social": {
       "facebook": "",
-      "twitter": "https://x.com/TinaCMS",
+      "twitter": "",
       "instagram": "",
-      "linkedIn": "https://www.linkedin.com/company/tinacms",
-      "github": "https://github.com/tinacms/tinacms",
-      "youtube": "https://www.youtube.com/@TinaCMS"
+      "linkedIn": "",
+      "github": "",
+      "youtube": ""
     }
   },
   "theme": {
     "color": "blue",
-    "font": "sans",
+    "font": "nunito",
     "darkMode": "light"
   }
 }

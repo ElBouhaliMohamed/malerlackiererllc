@@ -76,6 +76,39 @@ const Global: Collection = {
         },
         {
           type: "object",
+          label: "Links",
+          name: "links",
+          list: true,
+          ui: {
+            itemProps: (item) => {
+              return { label: item?.name };
+            },
+            defaultItem: {
+              name: "New Link",
+              link: "/",
+              follow: false,
+            },
+          },
+          fields: [
+            {
+              type: "string",
+              label: "Name",
+              name: "name",
+            },
+            {
+              type: "string",
+              label: "Link",
+              name: "link",
+            },
+            {
+              type: "boolean",
+              label: "Öffnen im gleichen Tab",
+              name: "follow",
+            }
+          ]
+        },
+        {
+          type: "object",
           label: "Social Links",
           name: "social",
           fields: [
